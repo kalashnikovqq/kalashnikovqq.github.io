@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/output.css" rel="stylesheet" />
+    <link rel="icon" href="media/favicon/faviconF.ico" />
+    <title>Главная</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/2.2.0/quicklink.umd.js"></script>
+    <script>
+      window.addEventListener("load", () => {
+        quicklink.listen();
+      });
+    </script>
+  </head>
+  <body
+    class="bg-zinc-900 bg-[url('../media/background/background.jpg')] bg-cover bg-fixed overflow-hidden left-0 right-0"
+  >
+    <header class="py-5 container mx-auto">
+      <div class="flex justify-between items-center">
+        <div>
+          <a
+            class="font-bold transition-colors duration-200 transform text-gray-200 text-3xl lg:text-lg hover:text-gray-300"
+            href="index.html"
+            >FieldFilm</a
+          >
+        </div>
+        <div class="flex space-x-6 lg:space-x-2">
+          <a
+            class="py-1 text-base font-medium link link-underline link-underline-black lg:text-sm text-gray-200 hover:text-gray-300"
+            href="list.html"
+            >Список фильмов</a
+          >
+          <a
+            class="py-1 text-base font-medium link link-underline link-underline-black lg:text-sm text-gray-200 hover:text-gray-300"
+            href="sources.html"
+            >Источники</a
+          >
+          <a
+            class="py-1 text-base font-medium link link-underline link-underline-black lg:text-sm text-gray-200 hover:text-gray-300"
+            href="about.html"
+            >Авторы</a
+          >
+        </div>
+      </div>
+    </header>
+    <main
+      class="flex justify-center h-fit pt-32 lg:pt-8 flex-col items-center gap-32 pb-64"
+    >
+      <div class="text-center" id="first">
+        <h1
+          class="text-5xl font-extrabold leading-tighter tracking-tight mb-10 text-gray-200"
+        >
+          Война и природа в
+          <span
+            class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400"
+            >киноэпопеях</span
+          >
+        </h1>
+        <div class="max-w-3xl mx-auto">
+          <p class="text-xl text-gray-200 mb-6 sm:text-sm">
+            Многие люди не видят проблематики, которые авторы вкладывают в<br />
+            военные фильмы. Мы решили создать этот проект для того, чтобы
+            люди<br />
+            лучше вникли в проблемы и вопросы, что задают и рассматривают
+            авторы<br />
+            в своих произведениях. На нашем сайте, на каждой странице фильма<br />
+            есть объяснение и раскрытие основных моментов самых популярных<br />
+            военных киноэпопей. Наш сайт позволяет пройти тест и узнать какой<br />
+            фильм мы вам рекомендуем для просмотра.
+          </p>
+          <button
+            id="sub"
+            onclick="sub()"
+            class="px-6 py-3 font-medium tracking-wide text-white transition-colors duration-200 transform bg-blue-600 rounded-md hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-500 focus:ring-opacity-30"
+          >
+            Пройти тест
+          </button>
+        </div>
+      </div>
+      <div
+        class="quiz-box text-gray-200 text-2xl mb-6 sm:text-sm flex-col justify-center items-center hidden"
+        id="quiz"
+      >
+        <div class="quiz-header flex flex-col justify-center items-center">
+          <h2 class="text-4xl font-extrabold mb-8 text-gray-200" id="question">
+            Question text
+          </h2>
+          <div class="w-fit pb-6">
+            <ul class="text-2xl font-semibold leading-normal">
+              <li>
+                <input type="radio" name="answer" id="a" class="answer" />
+                <label for="a" id="a_text">Question</label>
+              </li>
+              <li>
+                <input type="radio" name="answer" id="b" class="answer" />
+                <label for="b" id="b_text">Question</label>
+              </li>
+              <li>
+                <input type="radio" name="answer" id="c" class="answer" />
+                <label for="c" id="c_text">Question</label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button
+          id="submit"
+          class="px-6 py-3 font-medium text-base tracking-wide text-white transition-colors duration-200 transform bg-blue-600 rounded-md hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-500 focus:ring-opacity-30"
+        >
+          Далее
+        </button>
+      </div>
+    </main>
+    <footer
+      class="absolute bottom-0 left-0 right-0 flex w-screen items-center justify-center py-5 container mx-auto"
+    >
+      <div class="flex justify-between items-center flex-col gap-3">
+        <p class="text-sm text-gray-400">© FieldFilm, 2022</p>
+      </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

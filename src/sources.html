@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/output.css" rel="stylesheet" />
+    <link rel="icon" href="media/favicon/faviconF.ico" />
+    <title>Источники</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/2.2.0/quicklink.umd.js"></script>
+  <script>
+  window.addEventListener('load', () => {
+    quicklink.listen();
+  });
+  </script>
+  </head>
+  <body class="bg-zinc-900 relative z-10">
+    <header
+      class="py-5 container mx-auto bg-zinc-900 fixed z-20 left-0 right-0"
+    >
+      <div class="flex justify-between items-center">
+        <div>
+          <a
+            class="font-bold transition-colors duration-200 transform text-gray-200 text-3xl lg:text-lg hover:text-gray-300"
+            href="index.html"
+            >Главная</a
+          >
+        </div>
+        <div class="flex space-x-6 lg:space-x-2">
+          <a
+            class="py-1 text-base font-medium link link-underline lg:text-sm link-underline-black text-gray-200 hover:text-gray-300"
+            href="list.html"
+            >Список фильмов</a
+          >
+          <a
+            class="py-1 text-base font-medium link link-underline lg:text-sm link-underline-black text-gray-200 hover:text-gray-300"
+            href="sources.html"
+            >Источники</a
+          >
+          <a
+            class="py-1 text-base font-medium link link-underline lg:text-sm link-underline-black text-gray-200 hover:text-gray-300"
+            href="about.html"
+            >Авторы</a
+          >
+        </div>
+      </div>
+    </header>
+    <main
+      class="flex pl-64 lg:pl-6 mx-auto pt-24 h-fit z-10 relative container left-0 right-0 lg:justify-center"
+    >
+      <div>
+        <div class="flex lg:justify-center">
+          <div class="border-b-[3px] w-fit pb-2 border-blue-500">
+            <h1 class="font-semibold text-4xl text-white">Источники</h1>
+          </div>
+        </div>
+        <ul class="list-disc pl-5">
+          <div class="text-xl text-gray-200 pt-7 text-left">
+            <li>
+              <a
+                href="https://www.kinopoisk.ru/"
+                class="underline"
+                target="_blank"
+                >Кинопоиск</a
+              >
+            </li>
+          </div>
+          <div class="text-xl text-gray-200 pt-4 text-left">
+            <li>
+              <a
+                href="https://www.ivi.ru/collections/movies-the-war"
+                target="_blank"
+                class="underline"
+                >Фильмы про войну. Онлайн-кинотеатр ivi</a
+              >
+            </li>
+          </div>
+          <div class="text-xl text-gray-200 pt-4 text-left">
+            <li>
+              <a
+                href="https://ecosphere.press/2022/04/27/vojna-i-ekologiya-kak-na-prirodu-vliyayut-vooruzhennye-konflikty/"
+                target="_blank"
+                class="underline"
+                >Константин Харитонов. Война и экология: как<br> на природу влияют вооруженные
+                конфликты.</a
+              >
+            </li>
+          </div>
+          <div class="text-xl text-gray-200 pt-4 text-left">
+            <li>Линда Сегер. Скрытый смысл, 2018, 170 стр.</li>
+          </div>
+          <div class="text-xl text-gray-200 pt-4 text-left">
+            <li>Майкл Хейг. Голливудский стандарт, 2017, 380 стр.</li>
+          </div>
+        </ul>
+    </main>
+    <footer
+      class="flex items-center justify-center mt-24 py-10 container mx-auto border-t border-gray-600"
+    >
+      <div class="flex justify-between items-center flex-col gap-3">
+        <p class="text-sm text-gray-400">© FieldFilm, 2022</p>
+      </div>
+    </footer>
+  </body>
+</html>
